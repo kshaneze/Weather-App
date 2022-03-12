@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -36,12 +37,18 @@
               </svg>
             </button>
           </div>
-          <h2>Weather in Ljubljana</h2>
-          <h1>9.82°C</h1>
-
-          <p>Broken Clouds</p>
-          <p>Humidity:<span class="humidity-count">66%</span></p>
-          <p>Wind:<span class="wind-count">3.6km/h</span></p>
+          <div class="weather loading">
+          <h2 class="weather-message">Weather in Ljubljana</h2>
+          <h1 class="temp">9.82°C</h1>
+          <div class="flex">
+            <img src="" class="weather-icon"></img>
+            <p class="weather-desciption">Broken Clouds</p>
+          </div>
+          <p class="humiditiy-text">
+            Humidity: <span class="humidity-count">66%</span>
+          </p>
+          <p class="wind-text">Wind: <span class="wind-count">3.6km/h</span></p>
+        </div>
         </div>
       </div>
     </main>
